@@ -327,13 +327,13 @@ height: 20rem;
 
   header {
     padding: 1rem;
-    margin-right: -5rem;
+   /* margin-right: -5rem;*/
     /*correção menu navBar*/
   }
 
   .section-01 {
     background-image: url(imagem/desktop\ 3\ MOBILE.jpg);
-    padding: 8rem;
+    padding: 8rem; /*diminuindo o prenchimento da section*/
 
   }
 
@@ -343,7 +343,14 @@ height: 20rem;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 4rem 1rem;
+    padding: 4rem 1rem;/*primeiro valor é o padding superior/inferior .  segundo valor é o padding left/right*/
+  }
+
+  .section-04 h3{
+
+font-size: 1.7rem;
+
+
   }
 
   /* Centraliza o texto do título e parágrafo */
@@ -354,7 +361,7 @@ height: 20rem;
   }
 
   .text-content p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
     padding: 0 1rem;
   }
@@ -422,6 +429,20 @@ height: 20rem;
     padding: 1rem 0;
   }
 
+.div-pai-footer{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+
+
+}
+.div-filha-footer li a{
+
+font-size: 1.5rem;
+
+}
+
+
 }
 
 .div-pai-footer {
@@ -430,6 +451,7 @@ align-items: center;
 justify-content: space-evenly;
 text-align: center;
 flex-wrap: wrap;
+gap: 1.5rem;
 }
 
 .div-icon-footer {
