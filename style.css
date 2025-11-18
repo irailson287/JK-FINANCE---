@@ -8,7 +8,7 @@
 }
 
 header {
-  background-color:grey;
+  background-color: grey;
   /*cor de fundo*/
   padding: 0rem;
   /* preenchimento interno = 32px*/
@@ -27,6 +27,11 @@ header {
   /*zerando ao topo*/
   z-index: 999;
   /*eixo cartesiano/profundidade*/
+}
+
+
+.menu-btn {
+  color: white;
 }
 
 /* ESTILIZAÇÃO DA LOGO */
@@ -206,20 +211,21 @@ header {
   padding: 1rem;
   /*preenchimento interno*/
 }
-.div-02-section-03{
-padding: 0;
-background-image: url(imagem/BANNER-02.jpg);
+
+.div-02-section-03 {
+  padding: 0;
+  background-image: url(imagem/BANNER-02.jpg);
   background-size: cover;
   background-position: center;
-width: 20rem;
-height: 20rem;
+  width: 20rem;
+  height: 20rem;
 }
 
-.div-02-section-03 img{
-background-position: center;
-background-size: cover;
-width: 20rem;
-height: 20rem;
+.div-02-section-03 img {
+  background-position: center;
+  background-size: cover;
+  width: 20rem;
+  height: 20rem;
 }
 
 
@@ -255,14 +261,15 @@ height: 20rem;
   padding: 8rem;
   background-image: url(imagem/gemini.png);
   background-position: center;
-  
+
   background-size: cover;
 }
 
 
 
 .section-04 {
-  padding: 7rem; /*preenchimento*/
+  padding: 7rem;
+  /*preenchimento*/
   /* Alinhamento */
   display: flex;
   align-items: center;
@@ -271,16 +278,22 @@ height: 20rem;
   flex-wrap: wrap;
 }
 
-.input-email { /*estou estilizando o input que recebe o e-mail*/
-  padding: 0.8rem; /*preenchimento interno*/
-  width: 23rem; /*largura*/
-  background-color: rgba(36, 35, 35, 0.29); /*cor de fundo*/
-  border: none; /*removendo bordas*/
-  margin: 1.5rem; /*espaçamento externo de todos os lados*/
+.input-email {
+  /*estou estilizando o input que recebe o e-mail*/
+  padding: 0.8rem;
+  /*preenchimento interno*/
+  width: 23rem;
+  /*largura*/
+  background-color: rgba(36, 35, 35, 0.29);
+  /*cor de fundo*/
+  border: none;
+  /*removendo bordas*/
+  margin: 1.5rem;
+  /*espaçamento externo de todos os lados*/
 }
 
 .button-form {
-    width: 8rem;
+  width: 8rem;
   /*largura*/
   background-color: rgb(36, 36, 83);
   /*cor de fundo*/
@@ -308,6 +321,7 @@ height: 20rem;
   font-size: 2rem;
   cursor: pointer;
   display: none;
+  /*TORNA O MITEM IVISIVEL/so aparece no mobile */
   /* só aparece no mobile */
 }
 
@@ -327,13 +341,30 @@ height: 20rem;
 
   header {
     padding: 1rem;
-   /* margin-right: -5rem;*/
+    /* margin-right: -5rem;*/
     /*correção menu navBar*/
+  }
+
+  .menu-desktop {
+/*aqui estamos ocultando o menu DESKTOP para versoes mobile*/
+    display: none; 
+/*responsavel por ocultar o menu ou qualquer outra propriedade*/
+
+  }
+
+  .menu-btn {
+
+display: flex; /*tornando o menu Hamburger Visivel*/
+
+margin-right: -3rem; /*posiciomento do menu*/
+
+
   }
 
   .section-01 {
     background-image: url(imagem/desktop\ 3\ MOBILE.jpg);
-    padding: 8rem; /*diminuindo o prenchimento da section*/
+    padding: 8rem;
+    /*diminuindo o prenchimento da section*/
 
   }
 
@@ -343,12 +374,13 @@ height: 20rem;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 4rem 1rem;/*primeiro valor é o padding superior/inferior .  segundo valor é o padding left/right*/
+    padding: 4rem 1rem;
+    /*primeiro valor é o padding superior/inferior .  segundo valor é o padding left/right*/
   }
 
-  .section-04 h3{
+  .section-04 h3 {
 
-font-size: 1.7rem;
+    font-size: 1.7rem;
 
 
   }
@@ -390,38 +422,7 @@ font-size: 1.7rem;
 
 
 
-  .menu-desktop {
-    /* Aqui estamos ocultando o menu para versões MOBILIE */
-    display: none;
-    /*Responsável por ocultar o menu ou qualquer outra propriedade*/
-  }
 
-  .menu-btn {
-    display: block;
-    /*tornando o menuHamburger Visível*/
-  }
-
-
-  .nav-menu {
-    position: absolute;
-    top: -30rem;
-    /* começa escondido acima */
-    left: -2rem;
-    width: 100%;
-    height: 30vh;
-    background-color: #D8D8C0;
-    transition: top 0.3s ease-in-out;
-    /* transição suave */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .show {
-    top: 90px;
-    /* desce suavemente quando é ativado */
-    left: -2rem;
-  }
 
   .ul-list2 {
     flex-direction: column;
@@ -429,57 +430,59 @@ font-size: 1.7rem;
     padding: 1rem 0;
   }
 
-.div-pai-footer{
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
+  .div-pai-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
 
-}
-.div-filha-footer li a{
+  }
 
-font-size: 1.5rem;
+  .div-filha-footer li a {
 
-}
+    font-size: 1.5rem;
+
+  }
 
 
 }
 
 .div-pai-footer {
-display: flex;
-align-items: center;
-justify-content: space-evenly;
-text-align: center;
-flex-wrap: wrap;
-gap: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 .div-icon-footer {
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 
 }
-.div-icon-footer i{
-font-size: 2rem;
-margin: 0.5rem;
-cursor: pointer;
-transition: 0.8s;
+
+.div-icon-footer i {
+  font-size: 2rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: 0.8s;
 
 }
 
-.div-icon-footer i:hover{
+.div-icon-footer i:hover {
 
-color: #424240;
+  color: #424240;
 
 }
 
 
 .div-linha {
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -487,28 +490,28 @@ justify-content: center;
 
 
 .line2 {
-width: 55%;
+  width: 55%;
 }
 
 
 
 
-footer{
-background-color: #252522;
-color: white;
-padding: 3rem;
-display: flex;
-flex-direction: column;
-gap: 2rem;
+footer {
+  background-color: #252522;
+  color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .div-filha-footer li a {
-text-decoration: none;
-color: rgb(190, 176, 176);
+  text-decoration: none;
+  color: rgb(190, 176, 176);
 }
 
 @media (max-width: 500px) {
- .div-linha{
-display: none;
-} 
+  .div-linha {
+    display: none;
+  }
 }
