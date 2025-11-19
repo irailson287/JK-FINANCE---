@@ -13,5 +13,13 @@
 // 6 - Fazer o JavaScript interagir com o ícone do menu hambúrguer e executar a ação.
 
 
-// Seleciona o botao dom menu (icone de hamburguer) pelo ID defenido no html
-const menuBtn = document.
+// Seleciona o botão do menu (ícone de hambúrguer) pelo ID definido no HTML
+const menuBtn = document.getElementById('menu-btn');
+
+// Seleciona o elemento de navegação (menu que será aberto/fechado)
+const navMenu = document.getElementById('nav-menu');
+
+// Dentro do botão, procura o elemento <i> (ícone da fonte Font Awesome)
+const menuIcon = menuBtn.querySelector('i');
+// querySelector() -> método reservado do JavaScript usado para buscar
+// o primeiro elemento que corresponde a um seletor CSS dentro de outro elemento.
