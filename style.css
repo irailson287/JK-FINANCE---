@@ -346,17 +346,38 @@ header {
   }
 
   .menu-desktop {
-/*aqui estamos ocultando o menu DESKTOP para versoes mobile*/
-    display: none; 
-/*responsavel por ocultar o menu ou qualquer outra propriedade*/
+    /*aqui estamos ocultando o menu DESKTOP para versoes mobile*/
+    display: none;
+    /*responsavel por ocultar o menu ou qualquer outra propriedade*/
 
   }
 
+  .nav-menu {
+    display: flex;
+position: absolute; /**/
+top: -30rem; /*começa escondido acima*/
+left: -20rem; /*ajustando o alinhamento do menu*/
+width: 100%; /*largura total da caixa*/
+height: 30vh; /*altura da caixa do menu*/
+background-color: antiquewhite;
+transition: top 0.3s ease-in-out; /*trancisao suave*/
+justify-content: center;/*alinhamento horizontal*/
+align-items: center; /*alinhamento vertical*/
+  }
+
+.show { /*essa classe sera usada pelo javascript para açao do menu*/
+  top: 90px; /*desce suavemente quando e ativado*/
+  left: -2rem;/*posicionamento do menu*/
+}
+
+
   .menu-btn {
 
-display: flex; /*tornando o menu Hamburger Visivel*/
+    display: flex;
+    /*tornando o menu Hamburger Visivel*/
 
-margin-right: -3rem; /*posiciomento do menu*/
+    margin-right: -3rem;
+    /*posiciomento do menu*/
 
 
   }
