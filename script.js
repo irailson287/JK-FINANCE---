@@ -23,3 +23,51 @@ const navMenu = document.getElementById('nav-menu');
 const menuIcon = menuBtn.querySelector('i');
 // querySelector() -> método reservado do JavaScript usado para buscar
 // o primeiro elemento que corresponde a um seletor CSS dentro de outro elemento.
+
+
+// Adiciona um "ouvinte de evento" (listener) que detecta o click no botao do menu. 
+menuBtn.addEventListener('click', () => {
+// addEventListener() -> metodo reservado usado para executar uma funçao
+
+// toda vez em que um evento especifico o9corre (nesse caso, um click).
+
+// Alterna(liga/desliga) a classe "show" no menu de navegaçao.
+
+// isso faz o menu aparecer ou desaparecer visualmente via css.
+
+navMenu.classList.toggle('show');
+// classList.toggle() -> adiciona a classe se ela nao existir ; remove se va existir.
+
+// troca o icone ( de hamburguer para  "x" e vice-versa ), dependendo do estado atual.
+
+// verifica se icone atual tem a classe "fa-bars"  (icone hamburgue )
+if (menuIcon.classList.contains('fa-bars')) {
+//classList.contains() -> verifica se o elemento contem uma classe especifica (retorna true ou false).
+
+// Se sim , remove a classe do icone de hamburguer ...
+
+menuIcon.classList.remove('fa-bars');
+// ...e adiciona o icone de "x" para indicar que o menu popde ser fechado
+
+menuIcon.classList.add('fa-xmark');
+} else {
+// caso contrario , volta o icone para o estado original (hamburguer)
+menuIcon.classList.remove('fa-xmark');
+menuIcon.classList.add('fa-bars');
+
+}
+});
+
+
+
+const typed = new Typed (".auto-type",{
+    strings: ["JK FINANCE", "INVESTINDO NOS SEUS SONHOS"],
+    typeSpeed: 80,
+    backSpeed: 60,
+    backDelay: 1200,   // pausa antes de apagar
+    loop: true,
+    showCursor: false  // Oculta o cursor de digitação
+} );
+
+
+

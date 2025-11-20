@@ -50,9 +50,10 @@ header {
   /*espaçamento entre as listas*/
 }
 
-.ul-list li a {
+.ul-list li, a {
   /*removendo a estilização padrão da âncora*/
   text-decoration: none;
+
   color: black;
 
 }
@@ -345,6 +346,10 @@ header {
     /*correção menu navBar*/
   }
 
+  .ul-list li, a{
+    font-size: 1.4rem;
+  }
+
   .menu-desktop {
     /*aqui estamos ocultando o menu DESKTOP para versoes mobile*/
     display: none;
@@ -354,21 +359,51 @@ header {
 
   .nav-menu {
     display: flex;
-position: absolute; /**/
-top: -30rem; /*começa escondido acima*/
-left: -20rem; /*ajustando o alinhamento do menu*/
-width: 100%; /*largura total da caixa*/
-height: 30vh; /*altura da caixa do menu*/
-background-color: antiquewhite;
-transition: top 0.3s ease-in-out; /*trancisao suave*/
-justify-content: center;/*alinhamento horizontal*/
-align-items: center; /*alinhamento vertical*/
+    position: absolute;
+    top: -30rem;
+    /*começa escondido acima*/
+    left: 0rem;
+    /*ajustando o alinhamento do menu*/
+    width: 100%;
+    /*largura total da caixa*/
+    height: 40vh;
+    /*altura da caixa do menu*/
+    background-color: rgb(185, 180, 180);
+    transition: to 0.3s ease-in-out;
+    /*trancisao suave*/
+    justify-content: center;
+    /*alinhamento horizontal*/
+    align-items: center;
+    /*alinhamento vertical*/
+    
   }
+  
 
-.show { /*essa classe sera usada pelo javascript para açao do menu*/
-  top: 90px; /*desce suavemente quando e ativado*/
-  left: -2rem;/*posicionamento do menu*/
+/*nav-menu {
+position: fixed;
+top: 0;
+left: -100%;escondido fora da tela
+midht: 70%; tamanho da gaveta
+ height: 130vh;
+background-color: ;
+transition: left 0.3s ease-in-out; animaçao lateral
+ display: flex;
+justify-content: center;
+aling-itens: center;
+flex-direction: column;
+z-index: 999;
 }
+
+*/
+
+
+  .show {
+    /*essa classe sera usada pelo javascript para açao do menu*/
+    top: 170px;
+    /*desce suavemente quando e ativado*/
+    left: 0rem;
+    /*posicionamento do menu*/
+  }
 
 
   .menu-btn {
@@ -378,8 +413,6 @@ align-items: center; /*alinhamento vertical*/
 
     margin-right: -3rem;
     /*posiciomento do menu*/
-
-
   }
 
   .section-01 {
@@ -535,4 +568,8 @@ footer {
   .div-linha {
     display: none;
   }
+
+}
+.auto-type {
+  padding: 1rem;
 }
